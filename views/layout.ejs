@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About the Developer</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    
+    <style>
+      p {text-align: center;}
+     .navbar-custom {
+          background-color: #6f42c1;
+        }
+        /* Modify brand and text color */ 
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-text {
+            color: rgba(255,251,240,0.5);
+        }
+        /* Set background color */ 
+        body {
+          background-color: #292421;
+        }
+        /* Set h1 margin */ 
+        h1{
+          padding-left : 20px;
+        }
+        h2{
+          text-align: center;
+        }        
+        ul {
+          display: table;
+          margin: 0 auto;
+        }
+    </style>
+  </head>
+ 
+  <div class="my-container"> 
+    <!-- Navbar text is light and background is dark -->
+    <nav class="navbar navbar-custom">
+      <h1 style="color:rgba(255,251,240,0.5);text-align: center;"><a href="/" style="color:rgba(255,251,240,0.5); text-decoration: none; ">RZ</a></h1>
+        <a class="navbar-brand" href="#">
+          <p style="font-family:'KaiTi'">朱鹏飞</p>
+        </a>    
+    </nav>
+  </div>  
+  
+    <%- body %>
+  </body>
+</html>

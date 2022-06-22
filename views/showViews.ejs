@@ -1,0 +1,22 @@
+<h3 style="color:rgba(255,251,240,0.5);">Show Pageviews</h1>
+
+<h4 style="color:rgba(255,251,240,0.5);">article :</p>
+    <pre>
+    <%= JSON.stringify(article,null,5) %>
+</pre>
+<table style="color:rgba(255,251,240,0.5);" class="table table-bordered table-striped"> 
+    <thead>
+        <th>time</th>
+        <th>views</th>
+    </thead>
+    <tbody>
+        <% for(item of items){%> 
+        <tr> 
+            <td style="color:rgba(255,251,240,0.5);"><%= item.timestamp.slice(0, 4) +"/" + item.timestamp.slice(4, 6) +"/" + item.timestamp.slice(6, 8)%> </td> 
+            <td style="color:rgba(255,251,240,0.5);"> <%=item.views%></td> 
+        </tr>
+        <% } %>
+    </tbody>
+</table>
+
+
