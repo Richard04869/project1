@@ -1,0 +1,24 @@
+<h1>Find Article by Date</h1>
+    <form  style="color:rgba(255,251,240,0.5);" method="post" action="/views">
+        Enter the article: <input type="text" style="color:rgba(255,251,240,0.5);" name="article"><br>
+        Enter the date: <input type="text" style="color:rgba(255,251,240,0.5);" name="date"><br>
+        <input type="submit">
+    </form>
+
+
+<% if (articles.length==0){ %>
+No articles to display
+<% } else {%> 
+    <h1>articles</h1>
+
+<% for(article of articles){%> 
+<hr>
+    <%= article.timestamp.slice(0, 4) +"/" + article.timestamp.slice(4, 6) +"/" + article.timestamp.slice(6, 8)%> 
+    <%=article.views%> 
+    <a href="/addHistory/<%= article.date%>">add to schedule</a>
+<% } %>
+
+<pre>
+    <%= JSON.stringify(courses,null,5) %>
+</pre>
+

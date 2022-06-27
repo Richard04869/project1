@@ -1,0 +1,13 @@
+<h1>Articles</h1>
+<% for (article of articles) {%>
+<hr>
+<tr> 
+    <td style="color:rgba(255,251,240,0.5);"><%= article.timestamp.slice(0, 4) +"/" + article.timestamp.slice(4, 6) +"/" + article.timestamp.slice(6, 8)%> </td> 
+    <td style="color:rgba(255,251,240,0.5);"> <%=article.views%></td> 
+</tr>
+<% } %>
+
+
+<pre>
+    <%= JSON.stringify(courses,null,5) %>
+</pre>

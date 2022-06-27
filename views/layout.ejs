@@ -38,9 +38,16 @@
     <!-- Navbar text is light and background is dark -->
     <nav class="navbar navbar-custom">
       <h1 style="color:rgba(255,251,240,0.5);text-align: center;"><a href="/" style="color:rgba(255,251,240,0.5); text-decoration: none; ">RZ</a></h1>
-        <a class="navbar-brand" href="#">
+         <% if (!loggedIn) {%>
+            <a class="nav-link" href="/login">Login/Signup</a>
+          <% } else { %>
+              <a class="nav-link" href="/logout">Logout <%= username %></a>
+          <% } %>
+          
+          <a class="navbar-brand" href="#">
           <p style="font-family:'KaiTi'">朱鹏飞</p>
-        </a>    
+        </a> 
+       
     </nav>
   </div>  
   
